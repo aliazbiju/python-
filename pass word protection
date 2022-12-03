@@ -1,0 +1,17 @@
+name=input('Enter the name:')
+passw=input('Enter the password:')
+if name=='aliaz' and passw=='123':
+    print('Welcome Aliaz.Welcome to the console')
+    print('please enter the company id:')
+    print('checking the status////........')
+    print('checking completed')
+    print('processing speed 120GB,free memory:1000TB')
+    comid=input('company id:')
+    if comid=='231':
+        print('welcome to the company.You  are successfully verified')
+        print('You can now continue the work')
+        print('')
+    else:
+        print('Sorry the company verification failed//////////')
+else:
+    print('sryyyy')
