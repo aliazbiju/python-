@@ -36,7 +36,7 @@ while count < 3:
                 print(file.read())
                 print('---------------------------------------------------')
                 print('---------------------------------------------------')
-                break
+                continue
     
             else:
                 print('security code mismatch')
