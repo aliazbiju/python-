@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Dec  8 10:39:17 2022
+
+@author: HP
+"""
 
 import time;
 
@@ -22,6 +28,8 @@ while count < 3:
         print('////////////Initiating the testing./////////')
         print('///////opening working module//////')
         print('///////////confirm the security code for starting the operation///////////')
+        count=4
+
         coun1=0
         while coun1 < 3:
             security_code = input('enter security code')
@@ -36,27 +44,21 @@ while count < 3:
                 print(file.read())
                 print('---------------------------------------------------')
                 print('---------------------------------------------------')
-                continue
+                coun1=4
+                
+                print('------Enjoy--------')
+                break
+                
+                
     
             else:
                 print('security code mismatch')
                 print('operation cancelled with immediate effect.......')
                 print('Re-enter the password and username correctly')
                 coun1 +=1
-
-                if coun1==3:
-                    print('entry to the file  is restricted')
-                    break
+        
     else:
         print('Access denied.CHECK USERNAME AND PASSWORD and Try again.')
         count += 1
         
-        if count==3:
-            print('protocol breach')
-            print("YOU HAVE REACHED MAXIMUM NUMBER OF TRY.......")
-            print('TERMINATING THE WINDOW.///////')
-            print('INITIATING EMERGENCY PROTOCOL')
-            break
-input("Press enter to exit ;)")
        
-
